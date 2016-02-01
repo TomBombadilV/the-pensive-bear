@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- For Proper Mobile Rendering -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>The Pensive Bear</title>
+
+		<!-- Bootstrap -->
+		<link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+
+		<!-- Fonts -->
+
+	</head>
+
+	<body>
+		<!-- jQuery (necessary for Bootstrap's JS plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+		<!-- Include all plugins below, or individual files as needed -->
+		<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+		<!-- Playing with Bootstrap Grid -->
+		<div class="container-fluid" id="Top">
+
+			<div class="row" id="MenuBar">
+				<div class="col-sm-8 MenuBarCol" id="MenuFill">
+				</div>
+		
+				<div class="col-sm-1 MenuBarCol" id="MenuHome">
+					<p>Home</p>
+				</div>
+	
+				<div class="col-sm-1 MenuBarCol" id="MenuML">
+					<p>ML</p>
+				</div>
+
+				<div class="col-sm-1 MenuBarCol" id="MenuIOS">
+					<p>iOS</p>
+				</div>
+	
+				<div class="col-sm-1 MenuBarCol" id="MenuGrowth">
+					<p>Growth</p>
+				</div>
+			
+			</div>
+
+			<div class="row" id="TitleBar">
+				<div class="col-sm-6 TitleBarItem" id="TitleBarImgs">
+					<img id="BearImg" src="http://pngimg.com/upload/bear_PNG1200.png"/>
+					<img id="RobotImg" src="http://megaicons.net/static/img/icons_sizes/276/700/256/robot-icon.png"/>
+					<img id="RobotImg" src="http://megaicons.net/static/img/icons_sizes/276/700/256/robot-icon.png"/>
+					<img id="RobotImg" src="http://megaicons.net/static/img/icons_sizes/276/700/256/robot-icon.png"/>
+				</div>
+				<div class="col-sm-6 TitleBarItem" id="TitleBarText">
+					<p> Thoughts &&<br> Experiments</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid" id="Content">
+			<div class="row ContentBlock">
+				<div class="col-sm-3 LeftColumn">
+					<div class="CategoryTab" style="background-color: #9BD22D">
+						<p>ML</p>
+					</div>
+				</div>
+
+				<div class="col-sm-7 col-med-7 EntryColumn">
+					<h1 class="EntryTitle">First Day. <small class="EntrySubtitle">Data Scientist at Microsoft.</small></h1>
+
+					<p class="EntryDate">January 1, 3016</p>
+					
+					<span class="EntryText">
+						<p> Today I started working at Microsoft as a Data Scientist. They flew me out to Mars and showed me my lodgings in their colonization dome. It was really quite the experience. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+
+						<br>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+						<br>
+
+						<blockquote>
+							A society grows great when old men plant trees whose shade they know they shall never sit in.
+							<small>Greek Proverb</small>
+						</blockquote>
+					</span>
+					
+				</div>
+			</div>
+
+
+
+			<div class="row ContentBlock">
+				<div class="col-sm-3 LeftColumn">
+					<div class="CategoryTab" style="background-color: #BF245E">
+						<p>iOS</p>
+					</div>
+				</div>
+
+				<div class="col-sm-7 col-med-7 EntryColumn">
+					<!-- Playing with Headings -->
+					<h1 class="EntryTitle">Lorem Ipsum Dolor. <small class="EntrySubtitle">Sit Amet</small></h1>
+
+					<p class="EntryDate">January 4, 3016</p>
+					
+					<span class="EntryText">
+						<p> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+
+						<br>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+						<br>
+
+						<pre>
+public static void fileCopy( File in, File out )
+throws IOException
+{
+	FileChannel inChannel = new FileInputStream( in ).getChannel();
+	FileChannel outChannel = new FileOutputStream( out ).getChannel();
+	try
+    {
+        // magic number for Windows, 64Mb - 32Kb)
+        int maxCount = (64 * 1024 * 1024) - (32 * 1024);
+        long size = inChannel.size();
+        long position = 0;
+        while ( position < size )
+        {
+           position += inChannel.transferTo( position, maxCount, outChannel );
+        }
+    }
+    finally
+    {
+        if ( inChannel != null )
+        {
+           inChannel.close();
+        }
+        if ( outChannel != null )
+        {
+            outChannel.close();
+        }
+    }
+}
+		</pre>
+					</span>
+					
+				</div>
+			</div>
+
+		</div>
+
+		<div class="container-fluid" id="AboutMe">
+			<div class="row">
+				<div class="col-sm-2">
+				</div>
+
+				<div class="col-sm-6" id="About">
+					<h1 id="AboutTitle">About the Pensive Bear <small> ...AKA Julien</small></h1>
+					<span id="AboutText">
+						<p>Julien is a data scientist living in the Silicon Valley. He loves Machine Learning, robots, and coffee. In his free time you might find him working out, listening to awesome music, or hanging out with his bear girlfriend (who built this really awesome website for him). You also might find him devouring a large array of desserts, or hanging out on his laptop in a coffee shop. </p>
+
+						
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</span>
+				</div>
+
+				<div class="col-sm-3">
+					<img src="juju_detail.png" id="JulienImg"/>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid" id="BottomBar">
+			<p>Julien Hoachuck &copy; 3016</p>
+		</div>
+
+
+		<script>
+			$(document).ready(function() {
+				$('.MenuBarCol').click(function() { /* function for Menu Bar coloring */
+					var id = $(this).attr("id");
+					var color = "white";
+					var underlineColor = "white"; /* Underline shades are the fifth shade from the top on color picker */
+
+					if ( id == "MenuHome" ) {
+						color = "#190C99";
+						underlineColor = "#a3b0f8";
+					}
+					if ( id == "MenuML") {
+						color = "#9BD22D";
+						underlineColor = "#d7edab";
+					}
+					if ( id == "MenuIOS" ) {
+						color = "#BF245E";
+						underlineColor = "#efa9c3";
+					}
+					if ( id == "MenuGrowth" ) {
+						color = "#662E91";
+						underlineColor = "#cfb2e6";
+					}
+
+					$('#MenuHome').css("background-color", "#190C99");
+					$('#MenuML').css("background-color", "#9BD22D");
+					$('#MenuIOS').css("background-color", "#BF245E");
+					$('#MenuGrowth').css("background-color", "#662E91");
+					$(this).prevAll().css("background-color", color);
+
+
+					//$('.MenuBarCol').css("border-right", "none");
+					$('#MenuHome').css("border-right", "5px solid " + '#190C99');
+					$('#MenuML').css("border-right", "5px solid " + '#9BD22D');
+					$('#MenuIOS').css("border-right", "5px solid " + '#BF245E');
+					$('#MenuGrowth').css("border-right", "5px solid " + '#662E91');
+					$(this).prevAll().css("border-right", "5px solid " + color);
+					$(this).css("border-right", "5px solid " + underlineColor);
+
+				});
+			});
+		</script>
+
+	</body>
+
+
+</html>

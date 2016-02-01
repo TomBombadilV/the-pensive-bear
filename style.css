@@ -1,0 +1,217 @@
+@font-face {
+    font-family: Stroke;
+    src: url(stroke/Stroke-Regular.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: SS_Adec;
+    src: url(SS_Adec2.0/SS_Adec2.0_main.otf);
+    font-weight: normal;
+}
+
+@font-face {
+	font-family: KlinicSlabBook;
+	src: url(KlinicSlab_Personal_License/KlinicSlabBook.otf);
+	font-weight: normal;
+}
+
+#Top { /* Top Half */
+	/*background-color: #fcfcfc;*/
+}
+
+
+/* --------------------------------- MENU BAR ----------------------------------- */
+#MenuBar {
+	height: 45px;
+	/*background-color: yellow;*/
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+}
+
+.MenuBarCol { /* All columns in MenuBar */
+	height: 100%;
+}
+ 
+.MenuBarCol:hover {
+	cursor: pointer;
+}
+
+.MenuBarCol p { /* Text in all columns of MenuBar */
+	line-height: 45px;
+	text-align: center;
+	color: white;
+
+	font-family: 'KlinicSlabBook';
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 3px;
+}
+
+#MenuFill {
+	background-color: #190C99;
+	/*#0C3E97; Duller blue*/
+	/*034DA2; Lighter duller blue*/
+}
+
+#MenuHome {
+	background-color: #190C99;
+	/*#0C3E97; /* Duller Blue */
+	border-right: 5px solid #a3b0f8; /* site starts at Home tab */
+}
+
+#MenuML {
+	background-color: #9BD22D; /* Lime green */
+	/*#8bbd29; darker green*/
+	border-right: 5px solid #9BD22D; /* each tab has border to prevent shifting */
+}
+
+#MenuIOS {
+	background-color: #BF245E; /* Magenta */
+	border-right: 5px solid #BF245E;
+
+}
+
+#MenuGrowth {
+	background-color: #662E91; /* Purple */
+	border-right: 5px solid #662E91;
+}
+/* ------------------------------------------------------------------------------ */
+
+/* --------------------------------- TITLE BAR ---------------------------------- */
+#TitleBar { /* Top Title Bar */
+	height: 35vh;
+	border-bottom: 1px solid #ddd;
+	margin-top: 45px;
+}
+
+.TitleBarItem { /*Class for all cols in TitleBar */
+	height: 100%; /* Make TitleBar cols same height as TitleBar row */
+}
+
+#TitleBarImgs { /* Imgs in TitleBar */
+	/*background-color: green;*/
+}
+
+#BearImg {
+	height: 100%;
+}
+
+#RobotImg {
+	height: 20%;
+}
+
+#TitleBarText { /* Title in TitleBar lol */
+	display: table; /* For vertically and horizontally centering text */
+}
+
+#TitleBarText p { /* Title Text (Thoughts %% Experiments) */
+
+	/*background-color:red;*/
+
+	/* For vertically and horizontally centering text */
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	/* */
+
+	font-family: 'SS_Adec', 'KlinicSlabBook';
+	/*letter-spacing: 5px;*/
+	font-size: 70px; /*65px;*/
+}
+/* ------------------------------------------------------------------------------ */
+
+/* ---------------------------------- CONTENT ----------------------------------- */
+.ContentBlock { /* Block of LeftColumn and EntryColumn */
+	margin-bottom: 30px; /* Space between each entry */
+}
+
+.LeftColumn {
+	/*margin-top: 45px; /* 45px instead of 20px cause Bootstrap gives h1 extra 20px margin, plus extra for font margins */
+	padding-left: 0px; /* Override Bootstrap's padding of columns so that CategoryTab is flush left */
+}
+
+.CategoryTab {
+	background-color: #8bbd29; 
+	height: 30px;
+	width: 100%;
+	float: left;
+	padding-right: 30px;
+}
+
+.CategoryTab p {
+	float: right;
+
+	font-family: 'KlinicSlabBook';
+	font-size: 15px;
+	/*font-weight: 900;*/
+	line-height: 30px;
+	letter-spacing: 2px;
+	color: white;
+}
+
+.EntryColumn {
+	margin: 20px;
+}
+
+.EntryTitle {
+
+}
+
+.EntrySubtitle {
+
+}
+
+.EntryDate {
+	color: #888;
+}
+
+.EntryText {
+	font-size: 18px;
+	line-height : 30px;
+}
+/* ------------------------------------------------------------------------------ */
+
+#AboutMe {
+	background-color: #eee;
+	margin-top: 30px;
+}
+
+#About {
+	font-family: 'KlinicSlabBook', serif;
+	padding-top: 50px;/*30px;*/
+}
+
+#AboutTitle {
+	font-size: 40px;
+}
+
+#AboutText {
+	font-size: 20px;
+	/*line-height: 30px;*/
+}
+
+#JulienImg {
+	margin-top: 10px;
+	height: 450px;
+
+	display: block;
+	margin: auto;
+}
+
+#BottomBar {
+	background-color: #eee;
+	height: 50px;
+
+}
+
+#BottomBar p {
+	margin-bottom: 0px; /* Override Bootstrap margins */
+	text-align: center;
+	font-family: 'KlinicSlabBook';
+	font-size: 15px;
+	letter-spacing: 1px;
+	line-height: 50px;
+}
+
