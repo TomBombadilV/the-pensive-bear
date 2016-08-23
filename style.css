@@ -1,3 +1,4 @@
+/* ------------------------------- FONTS  --------------------------------- */
 @font-face {
     font-family: Stroke;
     src: url(stroke/Stroke-Regular.otf);
@@ -16,12 +17,18 @@
 	font-weight: normal;
 }
 
-#Top { /* Top Half */
-	/*background-color: #fcfcfc;*/
+a {
+	text-decoration: none;
+	color: black;
 }
 
+a:hover {
+	color: #190C99;
+}
 
-/* --------------------------------- MENU BAR ----------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------ MENU BAR --------------------------------- */
 #MenuBar {
 	height: 45px;
 	/*background-color: yellow;*/
@@ -49,41 +56,20 @@
 	letter-spacing: 3px;
 }
 
-#MenuFill {
-	background-color: #190C99;
-	/*#0C3E97; Duller blue*/
-	/*034DA2; Lighter duller blue*/
-}
-
-#MenuHome {
-	background-color: #190C99;
-	/*#0C3E97; /* Duller Blue */
-	border-right: 5px solid #a3b0f8; /* site starts at Home tab */
-}
-
-#MenuML {
-	background-color: #9BD22D; /* Lime green */
-	/*#8bbd29; darker green*/
-	border-right: 5px solid #9BD22D; /* each tab has border to prevent shifting */
-}
-
-#MenuIOS {
-	background-color: #BF245E; /* Magenta */
-	border-right: 5px solid #BF245E;
-
-}
-
-#MenuGrowth {
-	background-color: #662E91; /* Purple */
-	border-right: 5px solid #662E91;
-}
-/* ------------------------------------------------------------------------------ */
-
-/* --------------------------------- TITLE BAR ---------------------------------- */
+/* ------------------------------ TITLE BAR -------------------------------- */
 #TitleBar { /* Top Title Bar */
-	height: 35vh;
+	/*height: 35vh;*/
 	border-bottom: 1px solid #ddd;
 	margin-top: 45px;
+}
+
+#BannerImg {
+	width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 100px;
+    cursor: pointer;
 }
 
 .TitleBarItem { /*Class for all cols in TitleBar */
@@ -120,20 +106,56 @@
 	/*letter-spacing: 5px;*/
 	font-size: 70px; /*65px;*/
 }
-/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------- */
 
-/* ---------------------------------- CONTENT ----------------------------------- */
+/* ------------------------------- CONTENT --------------------------------- */
+#Content {
+	min-height: 100px;
+}
+
 .ContentBlock { /* Block of LeftColumn and EntryColumn */
-	margin-bottom: 30px; /* Space between each entry */
+	/*margin-bottom: 50px; /* Space between each entry */ /*Added 20px for resizing of div cutting off extra padding*/
+	/*margin-bottom: 10px; /* now posting platform adds <br> to end of posts */
+	/*height: 300px; /* Standard height for each blog post */
+	overflow: hidden;
+	position: relative;
+}
+
+.Resized {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 250px;
+	bottom: 0;
+
+	background: -moz-linear-gradient(top,  rgba(137,255,241,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(137,255,241,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(137,255,241,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(137,255,241,0) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(137,255,241,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(137,255,241,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0089fff1', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+.Resized p {
+	cursor: pointer;
+	text-align: center;
+	/*line-height: 450px;*/
+	margin-top: 225px;
+	font-family: 'KlinicSlabBook';
+	font-size: 20px;
+	letter-spacing: 2px;
+	font-weight: 700;
+	color: black;
 }
 
 .LeftColumn {
 	/*margin-top: 45px; /* 45px instead of 20px cause Bootstrap gives h1 extra 20px margin, plus extra for font margins */
 	padding-left: 0px; /* Override Bootstrap's padding of columns so that CategoryTab is flush left */
+	padding-right: 0px;
 }
 
 .CategoryTab {
-	background-color: #8bbd29; 
 	height: 30px;
 	width: 100%;
 	float: left;
@@ -152,11 +174,13 @@
 }
 
 .EntryColumn {
-	margin: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
 }
 
 .EntryTitle {
-
+	    font-size: 30px;
+	    font-family: 'KlinicSlabBook';
 }
 
 .EntrySubtitle {
@@ -170,12 +194,16 @@
 .EntryText {
 	font-size: 18px;
 	line-height : 30px;
+	text-align: justify;
 }
-/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------- */
 
+/* ---------------------------------- ABOUT -------------------------------- */
 #AboutMe {
 	background-color: #eee;
 	margin-top: 30px;
+	padding: 0px;
+	overflow: hidden;
 }
 
 #About {
@@ -184,26 +212,49 @@
 }
 
 #AboutTitle {
-	font-size: 40px;
+	font-size: 30px;
+	/*font-size: 40px;*/
 }
 
 #AboutText {
+	/*font-size: 20px;*/
 	font-size: 20px;
-	/*line-height: 30px;*/
+	line-height: 35px;
 }
 
 #JulienImg {
-	margin-top: 10px;
 	height: 450px;
-
 	display: block;
 	margin: auto;
+	margin-top: 20px;
+}
+
+#Links {
+	opacity: 1;
+	font-family: 'KlinicSlabBook', serif;
+	text-align: center;
+    margin-top: 50px;
+}
+
+.LinkButton {
+	position: relative;
+	display: inline-block;
+}
+
+.LinkButton:hover {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter ….3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    filter: gray;
+    -webkit-filter: grayscale(100%)
+}
+
+.LinkButton img {
+	height: 80px;
+	margin-right: 10px;
 }
 
 #BottomBar {
 	background-color: #eee;
 	height: 50px;
-
 }
 
 #BottomBar p {
@@ -215,3 +266,109 @@
 	line-height: 50px;
 }
 
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------- MEDIA QUERIES --------------------------------- */
+@media (max-width: 1000px) {
+	.MenuBarCol p {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 767px) {
+	blockquote {
+		font-size: 15px;
+	}
+
+	#MenuBar {
+		height: 35px;
+	}
+
+	#MenuFill {
+		display: none;
+	}
+
+	.MenuBarCol {
+		width: 25vw;
+		display: inline-block;
+	}
+
+	.MenuBarCol p {
+	    font-size: 10px;
+	    line-height: 35px;
+	}
+
+	#BannerImg {
+		width: 80%;
+		content: url("pensivebear_mobile_banner_3.png");
+		margin-top: 60px;
+    	margin-bottom: 70px;
+	}
+
+
+	.CategoryTab {
+		float: none;
+	}
+
+	.ContentBlock {
+		width: 80vw;
+	    display: block;
+	    margin: 0 auto;
+	    background-color: #fafafa;
+	}
+
+	.EntryColumn {
+	    margin-top: 30px;
+	    margin-left: 0px;
+	}
+
+	.EntryTitle, #AboutTitle {
+    	font-size: 25px;
+    	text-align: left;
+    }
+
+    .EntryDate {
+    	font-size: 12px;
+    }
+
+	.EntryText, #AboutText {
+	    font-size: 12px;
+	    line-height: 25px;
+	}
+
+	.Resized p {
+		font-size: 12px;
+	}
+
+	#About {
+		margin: 0 auto;
+	    width: 80%;
+	    text-align: justify;
+	}
+
+	#JulienImg {
+    	height: 300px;
+	}
+
+	.LinkButton {
+		width: 50px;
+	}
+}
+
+@media (max-width: 400px) {
+	.EntryTitle, #AboutTitle {
+		font-size: 20px;
+	}
+
+	.EntryDate {
+	    font-size: 10px;
+	}
+
+	.EntryText, #AboutText {
+	    line-height: 20px;
+	}
+
+	#JulienImg {
+    	height: 250px;
+	}
+}
